@@ -1,0 +1,497 @@
+@media screen and (max-width: 1200px) {
+  .row {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  /*footer*/
+  #footer {
+    border-top: 2px solid rgb(106, 9, 197);
+    position: relative;
+    background: #444;
+    padding: 30px 0;
+  }
+  #footer .row {
+    overflow: hidden;
+    text-align: center;
+  }
+  #footer .row .btmlogo {
+    float: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #footer .row .btmmenu {
+    float: none;
+  }
+  #footer .row .btmmenu .companyinfo {
+    float: none;
+  }
+  #footer .row .btmmenu .companyinfo .open {
+    color: #fff;
+    font-size: 12px;
+    margin: 20px 0 20px 0;
+  }
+  #footer .row .btmmenu .companyinfo .open a {
+    margin-right: 10px;
+  }
+  #footer .row .btmmenu .companyinfo .addr {
+    font-size: 12px;
+    color: #000;
+  }
+  #footer .sns {
+    margin: 10px 10px 0 30px;
+    opacity: 70%;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* 빠른예매버튼 */
+  #fixedBox {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    background: #c20000;
+    border-radius: 10px;
+  }
+  #footer .row .btmmenu .companyinfo .open a {
+    margin-right: 0px;
+    flex: 1 0 50%;
+    border: 1px solid #fff;
+    padding: 10px auto;
+    word-break: keep-all;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  /* 빠른예매버튼 */
+  #fixedBox {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    background: #c20000;
+    border-radius: 10px;
+  }
+  #fixedBox .ticket {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  #footer .row .btmmenu .companyinfo .open {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footer .row .btmmenu .companyinfo .open a {
+    margin-right: 0px;
+    flex: 1 0 25%;
+    border: 1px solid #fff;
+    padding: 10px 0;
+  }
+  #header {
+    background: #444;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: static;
+    z-index: 999;
+  }
+  #header .row {
+    padding: 0px;
+  }
+  #header .row h1 {
+    float: left;
+    padding: 20px 0 20px 20px;
+  }
+  #header .row .menuopen {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 25px;
+    height: 90px;
+    line-height: 90px;
+    margin-right: 30px;
+  }
+  #header .row #nav {
+    display: none;
+    float: right;
+    width: 100%;
+  }
+  #header .row #nav ul.depth1 > li {
+    float: none;
+    position: relative;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    word-break: keep-all;
+  }
+  #header .row #nav ul.depth1 > li > a {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    border-top: 1px solid rgba(132, 132, 132, 0.15);
+  }
+  #header .row #nav ul.depth1 > li > a:hover {
+    color: #bebebe;
+  }
+  #header .row #nav ul.depth1 > li > a::after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 37px;
+    font-size: 10px;
+    font-family: "FontAwesome";
+    content: "\f107";
+    opacity: 0.5;
+  }
+  /* #header .row #nav ul.depth1 > li.on .depth2 {
+    display: block;
+  } */
+  #header .row #nav ul.depth2 {
+    /* display: none; 완성하면 none으로 바꾸기*/
+    position: static; /* 수정할땐 absolute로 */
+    top: 100%;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    z-index: 999999;
+  }
+  #header .row #nav ul.depth2 > li > a {
+    display: block;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+    background: #444;
+    color: #fff;
+    transition: all 0.3s;
+    word-break: keep-all;
+  }
+  #header .row #nav ul.depth2 > li > a:hover {
+    background-color: #fff;
+    color: #444;
+    word-break: keep-all;
+  }
+  /*예고편*/
+  #section .preview {
+    /* overflow: hidden; */
+    display: block;
+    padding: 50px 0;
+    background-color: #000;
+  }
+  #section .preview .videoBox video {
+    width: 100%;
+  }
+  /*무비차트 | 상영예정작*/
+  #section .moviechart {
+    overflow: hidden;
+    background: #000;
+  }
+  #section .moviechart .row {
+    padding: 40px 0 50px;
+  }
+  #section .moviechart h2 {
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  #section .moviechart ul {
+    overflow: hidden;
+  }
+  #section .moviechart ul li {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  #section .moviechart ul li > a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  #section .moviechart ul li > a .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  #section .moviechart ul li:hover > a .btn {
+    opacity: 1;
+    border: 10px solid #fff;
+  }
+  #section .moviechart ul li img {
+    transition: all 0.5s;
+    transform-origin: center top;
+  }
+  #section .moviechart ul li p {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    background: rgb(106, 9, 197);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #section .moviechart ul li a {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+  }
+  /*슬라이드 구역*/
+  #section .event h2 {
+    font-size: 20px;
+    margin: 100px 0 40px;
+    text-align: center;
+    border-bottom: 2px solid rgb(106, 9, 197);
+    padding-bottom: 20px;
+  }
+  #section .eventContent {
+    display: block;
+    padding: 0;
+  }
+  #section .slideOuter1 {
+    position: relative;
+    width: 100%;
+  }
+  #section .slideOuter1 img {
+    width: 100%;
+  }
+  #section .slideOuter1 .slideInner .slide .text {
+    padding: 60px 0 20px 0;
+  }
+  #section .slideOuter1 .slideInner .slide .text h3 {
+    font-size: 25px;
+  }
+  #section .slideOuter1 .slideInner .slide .text p {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  #section .slideOuter1 .slideInner .slide .text .bth {
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #000;
+  }
+  #section .slideOuter1 .slideInner ul.slick-dots {
+    position: absolute;
+    left: 46%;
+    transform: translate(-50%);
+    bottom: 180px;
+    margin-left: 10px;
+  }
+  #section .slideOuter1 .slideInner ul.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  #section .slideOuter1 .slideInner ul.slick-dots li button {
+    width: 9px;
+    height: 9px;
+    text-indent: 9999px;
+    overflow: hidden;
+    background: rgba(43, 43, 43, 0.5);
+    border-radius: 50%;
+    border: none;
+  }
+  #section .slideOuter1 .slideInner ul.slick-dots li.slick-active button {
+    background: rgb(0, 0, 0);
+  }
+  /*자동재생 버튼*/
+  #section .slideOuter1 {
+    position: relative;
+  }
+  #section .slideOuter1 .plapau {
+    /* display: none; */
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    left: 47%;
+    transform: translate(50px);
+    bottom: 175px;
+  }
+  /*스키장이벤트*/
+  #section .eventA {
+    width: 100%;
+    background: #ffffff;
+    margin: 50px 0;
+    display: block;
+  }
+  #section .benefit .text2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  #section .benefit .text2 h3 {
+    font-size: 25px;
+  }
+  #section .benefit .text2 p {
+    font-size: 15px;
+  }
+  /*특별관*/
+  #section .special {
+    background: linear-gradient(to bottom, #1d024e, #fff);
+  }
+  #section .special .row {
+    overflow: hidden;
+  }
+  #section .special h2 {
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 100px 0 40px 0;
+  }
+  #section .special ul {
+    overflow: hidden;
+  }
+  #section .special ul li {
+    float: left;
+    width: 100%;
+    padding: 20px;
+  }
+  #section .special ul li > a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  #section .special ul li > a .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    padding-top: 15%;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  #section .special ul li:hover > a .name {
+    opacity: 1;
+  }
+  #section .special ul li img {
+    transition: all 0.5s;
+    transform-origin: center;
+  }
+  #section .special ul li:hover img {
+    transform: scale(1.1);
+  }
+
+  #section .special .row .more {
+    float: right;
+    padding: 20px 10px 20px 0;
+    color: rgb(68, 4, 128);
+  }
+  /*스토어*/
+  #section .store {
+    position: relative;
+  }
+  #section .store .row {
+    text-align: center;
+    padding: 100px 0 140px;
+  }
+  #section .store h3 {
+    border-bottom: 2px solid rgb(106, 9, 197);
+    padding-bottom: 20px;
+  }
+  #section .store p.slogun {
+    color: rgb(13, 116, 119);
+    font-size: 25px;
+    margin: 20px 0 20px;
+    word-break: keep-all;
+  }
+  #section .store ul {
+    overflow: hidden;
+  }
+  #section .store ul li {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  #section .store .package {
+    border: 1px solid #444;
+    border-radius: 10px;
+    position: relative;
+  }
+  #section .store .package .soldout {
+    opacity: 0.3;
+  }
+  #section .store .package .set {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: red;
+    opacity: 1;
+    z-index: 9999;
+  }
+  /*슬라이드 vip*/
+  #section .slideOuter2 {
+    margin: 50px 0;
+    position: relative;
+    width: 100%;
+  }
+  #section .slideOuter2 h2 {
+    border-bottom: 2px solid rgb(106, 9, 197);
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #section .slideOuter2 h3 {
+    color: rgb(13, 116, 119);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+    text-align: center;
+    word-break: keep-all;
+  }
+  #section .slideOuter2 p {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  #section .slideOuter2 .slideInner2 .slick-slide {
+    transform: scale(0.9);
+    padding: 20px 0;
+  }
+  #section .slideOuter2 .slideInner2 button.slick-arrow {
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  #section .slideOuter2 .slideInner2 button.slick-prev {
+    left: 20px;
+    z-index: 9999;
+  }
+  #section .slideOuter2 .slideInner2 button.slick-next {
+    right: 50px;
+  }
+}
