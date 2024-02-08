@@ -1,9 +1,15 @@
-let ww = $(window).width();
-if (ww > 980) {
-  $("html").addClass("pc");
-} else {
-  $("html").addClass("mobile");
+function getWindowWidth() {
+  let ww = $(window).width();
+  if (ww > 980) {
+    $("html").addClass("pc").removeClass("mobile");
+  } else {
+    $("html").addClass("mobile").removeClass("pc");
+  }
 }
+getWindowWidth();
+$(window).on("resize", function () {
+  getWindowWidth();
+});
 
 $(".slideInner").slick({
   autoplay: true,
