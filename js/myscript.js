@@ -2,8 +2,22 @@ function getWindowWidth() {
   let ww = $(window).width();
   if (ww > 980) {
     $("html").addClass("pc").removeClass("mobile");
+    $("#header #nav").css({
+      display: "block",
+      width: "auto",
+    });
+    $("#nav .depth1 > li").removeClass("on");
+    $("#nav .depth1 > li").find(".depth2").hide();
   } else {
     $("html").addClass("mobile").removeClass("pc");
+    $("#header .menuopen")
+      .find("i")
+      .removeClass("fa-times")
+      .addClass("fa-bars");
+    $("#header #nav").css({
+      display: "none",
+      width: "100%",
+    });
   }
 }
 getWindowWidth();
@@ -84,5 +98,11 @@ $("#nav .depth1 > li").on("click", function () {
 });
 $("#header .menuopen").on("click", function () {
   $(this).next().stop().slideToggle();
-  $(this).find("i").toggleClass("fa-bars fa-times");
+  if (!$(this).find("i").hasClass("fa-bars")) {
+    $("#header #nav .depth2").slideUp();
+    $("#nav .depth1 > li").removeClass("on");
+    $(this).find("i").addClass("fa-bars").removeClass("fa-times");
+  } else {
+    $(this).find("i").addClass("fa-times").removeClass("fa-bars");
+  }
 });
